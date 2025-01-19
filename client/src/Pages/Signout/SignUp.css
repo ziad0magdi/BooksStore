@@ -1,0 +1,110 @@
+/* Default SignUp Styling */
+.SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Light Mode */
+.SignUp_light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Dark Mode */
+.SignUp_dark {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+/* Form Container */
+.SignUp_formContainer {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode for Form Container */
+.SignUp_dark .SignUp_formContainer {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Form Heading */
+.SignUp_formContainer h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #4caf50; /* Green major color */
+}
+
+/* Form */
+.SignUp_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.SignUp_form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Dark Mode Input */
+.SignUp_dark .SignUp_form input {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.SignUp_form input:focus {
+  outline: none;
+  border-color: #4caf50; /* Green focus border */
+}
+
+/* Button */
+.SignUp_form button {
+  background-color: #4caf50; /* Green major color */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.SignUp_form button:hover {
+  background-color: #45a049; /* Slightly darker green */
+}
+
+.radio_gender {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .SignUp_formContainer {
+    padding: 20px;
+  }
+
+  .SignUp_form input {
+    font-size: 14px;
+  }
+
+  .SignUp_form button {
+    font-size: 14px;
+  }
+}
